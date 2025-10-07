@@ -2,6 +2,20 @@
 
 This project quantifies in-game momentum from NBA play-by-play data. It constructs a standardized scoring timeline (including OT handling), derives momentum-oriented indicators (rolling differential, scoring runs, lead swing magnitude, stability), and evaluates whether momentum aligns with and predicts outcomes at season scale.
 
+Skills used in this project:
+	•	Python (pandas, numpy) — data wrangling, event-level transforms, rolling windows
+	•	API integration (nba_api) — reproducible data collection, light rate-limiting
+	•	Feature engineering — momentum index, run/streak detection, swing magnitude, last lead-change timing, stability (inverse variance)
+	•	Time-series normalization — regulation vs OT period handling, absolute game-time construction
+	•	Exploratory data analysis (EDA) — distributions, segmentation (near-tie states), parameterized cutoffs
+	•	Statistical inference — binomial proportions, Wilson confidence intervals
+	•	Predictive modeling — pipelines (StandardScaler + LogisticRegression), stratified train/test split, ROC-AUC evaluation
+	•	Data visualization (matplotlib) — executive-style KPI charts and comparative visuals
+	•	Reproducibility — Jupyter notebooks, deterministic seeds, project structure, .gitignore, requirements.txt
+	•	Software engineering — modular utilities (scripts/), smoke tests, CLI scripts, virtualenv + ipykernel
+	•	Version control — Git/GitHub workflow, clean commits/tags, README-driven documentation
+	•	Communication — analytical storytelling, methods & caveats, decision-relevant insights
+
 ## Structure
 - `notebooks/01_single_game_walkthrough.ipynb` — Case study on one game (method illustration & visuals).
 - `notebooks/02_season_scale_analysis.ipynb` — Season-scale dataset, decisive-lead-change rates, late-momentum alignment, and predictive lift (AUC).
