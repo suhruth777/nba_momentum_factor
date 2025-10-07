@@ -2,7 +2,7 @@
 
 This project quantifies in-game momentum from NBA play-by-play data. It constructs a standardized scoring timeline (including OT handling), derives momentum-oriented indicators (rolling differential, scoring runs, lead swing magnitude, stability), and evaluates whether momentum aligns with and predicts outcomes at season scale.
 
-Skills used in this project:
+### Skills used in this project:
 	•	Python (pandas, numpy) — data wrangling, event-level transforms, rolling windows
 	•	API integration (nba_api) — reproducible data collection, light rate-limiting
 	•	Feature engineering — momentum index, run/streak detection, swing magnitude, last lead-change timing, stability (inverse variance)
